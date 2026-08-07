@@ -9,7 +9,8 @@
     "checkJs": false,
     "isolatedModules": true,
     "moduleResolution": "bundler",
-    "strict": true
+    "strict": true,
+    "types": ["node", "svelte", "vite/client"]
   },
   "include": ["src/**/*", "tests/**/*", "src/**/*.svelte"],
   "references": [{ "path": "./tsconfig.node.json" }]
