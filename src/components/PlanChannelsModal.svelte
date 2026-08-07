@@ -4,21 +4,38 @@
 
   interface Props {
     plan: Plan | null;
+    winner?: Plan | null;   // cheapest plan for the current selection, if any
     channels: Channel[];
     onClose: () => void;
   }
 
-  let { plan, channels, onClose }: Props = $props();
+  let { plan, winner = null, channels, onClose }: Props = $props();
 
   const byId = $derived(new Map(channels.map(c => [c.id, c])));
 
+  function toSortedChannels(ids: string[]): Channel[] {
+    return ids
+      .map(id => byId.get(id))
+      .filter((c): c is Channel => c !== undefined)
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }
+
   // Chips sorted alphabetically by name (browse-oriented, not URL-matching).
-  const sortedChannels = $derived(
-    plan
-      ? plan.channels
-          .map(id => byId.get(id))
-          .filter((c): c is Channel => c !== undefined)
-          .sort((a, b) => a.name.localeCompare(b.name))
+  const sortedChannels = $derived(plan ? toSortedChannels(plan.channels) : []);
+
+  // Comparison sections are only meaningful when the modal opens a plan
+  // other than the currently-recommended winner.
+  const comparing = $derived(!!(plan && winner && winner.id !== plan.id));
+
+  const addsChannels = $derived(
+    plan && comparing && winner
+      ? toSortedChannels(plan.channels.filter(id => !winner!.channels.includes(id)))
+      : [],
+  );
+
+  const lacksChannels = $derived(
+    plan && comparing && winner
+      ? toSortedChannels(winner.channels.filter(id => !plan!.channels.includes(id)))
       : [],
   );
 
@@ -96,6 +113,35 @@
       {#if sortedChannels.length === 0}
         <p class="empty">This plan has no channels.</p>
       {:else}
+        {#if comparing && winner && addsChannels.length > 0}
+          <div class="section-label">Adds ({addsChannels.length}) compared to {winner.name}</div>
+          <ul class="chips">
+            {#each addsChannels as ch (ch.id)}
+              <li class="chip">
+                <span class="tile" style="background-color: {ch.bgColor ?? 'black'}">
+                  <img src={ch.logo} alt="" loading="lazy" />
+                </span>
+                <span class="name">{ch.name}</span>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+        {#if comparing && winner && lacksChannels.length > 0}
+          <div class="section-label">Lacks ({lacksChannels.length}) compared to {winner.name}</div>
+          <ul class="chips">
+            {#each lacksChannels as ch (ch.id)}
+              <li class="chip">
+                <span class="tile" style="background-color: {ch.bgColor ?? 'black'}">
+                  <img src={ch.logo} alt="" loading="lazy" />
+                </span>
+                <span class="name">{ch.name}</span>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+        {#if comparing && (addsChannels.length > 0 || lacksChannels.length > 0)}
+          <div class="section-label">All channels ({sortedChannels.length})</div>
+        {/if}
         <ul class="chips">
           {#each sortedChannels as ch (ch.id)}
             <li class="chip">
@@ -180,6 +226,15 @@
     font-style: italic;
     color: color-mix(in srgb, currentColor 55%, transparent);
   }
+  .section-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: color-mix(in srgb, currentColor 60%, transparent);
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .section-label:first-of-type { margin-top: 0; }
   .chips {
     list-style: none;
     padding: 0;
@@ -188,6 +243,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+  .chips + .chips { margin-top: 0.5rem; }
   .chip {
     display: inline-flex;
     align-items: center;

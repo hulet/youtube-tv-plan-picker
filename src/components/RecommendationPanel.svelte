@@ -17,6 +17,8 @@
   );
 
   let openPlan: Plan | null = $state(null);
+
+  const winner = $derived(selectedCount > 0 && plans.length > 0 ? plans[0] : null);
 </script>
 
 <aside class="panel" aria-live="polite">
@@ -43,7 +45,7 @@
   {/if}
 </aside>
 
-<PlanChannelsModal plan={openPlan} {channels} onClose={() => openPlan = null} />
+<PlanChannelsModal plan={openPlan} {winner} {channels} onClose={() => openPlan = null} />
 
 <style>
   .panel {
