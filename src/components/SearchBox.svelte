@@ -1,10 +1,21 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   interface Props {
     value: string;
     onInput: (value: string) => void;
   }
 
   let { value, onInput }: Props = $props();
+
+  let inputEl: HTMLInputElement | null = $state(null);
+
+  onMount(() => {
+    // Auto-focus on desktop; skip on touch devices to avoid popping the on-screen keyboard.
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      inputEl?.focus();
+    }
+  });
 </script>
 
 <div class="search">
@@ -14,6 +25,7 @@
     {value}
     oninput={(e) => onInput((e.target as HTMLInputElement).value)}
     aria-label="Search channels"
+    bind:this={inputEl}
   />
 </div>
 
