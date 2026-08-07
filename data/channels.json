@@ -1,0 +1,1180 @@
+[
+  {
+    "id": "a-wealth-of-entertainment-network",
+    "name": "A Wealth of Entertainment Network",
+    "aliases": [
+      "AWE"
+    ],
+    "logo": "/logos/a-wealth-of-entertainment-network.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "abc",
+    "name": "ABC",
+    "aliases": [],
+    "logo": "/logos/abc.png"
+  },
+  {
+    "id": "abc-news",
+    "name": "ABC News",
+    "aliases": [],
+    "logo": "/logos/abc-news.png"
+  },
+  {
+    "id": "abc-news-live",
+    "name": "ABC News Live",
+    "aliases": [],
+    "logo": "/logos/abc-news-live.png",
+    "bgColor": "rgb(19, 25, 89)"
+  },
+  {
+    "id": "accn",
+    "name": "ACCN",
+    "aliases": [
+      "ACC Network"
+    ],
+    "logo": "/logos/accn.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "adult-swim",
+    "name": "Adult Swim",
+    "aliases": [],
+    "logo": "/logos/adult-swim.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "all-reality",
+    "name": "All Reality",
+    "aliases": [],
+    "logo": "/logos/all-reality.png"
+  },
+  {
+    "id": "amc",
+    "name": "AMC",
+    "aliases": [],
+    "logo": "/logos/amc.png"
+  },
+  {
+    "id": "amc-thrillers",
+    "name": "AMC Thrillers",
+    "aliases": [],
+    "logo": "/logos/amc-thrillers.png"
+  },
+  {
+    "id": "american-crimes",
+    "name": "American Crimes",
+    "aliases": [],
+    "logo": "/logos/american-crimes.png"
+  },
+  {
+    "id": "animal-planet",
+    "name": "Animal Planet",
+    "aliases": [],
+    "logo": "/logos/animal-planet.png",
+    "bgColor": "rgb(0, 115, 255)"
+  },
+  {
+    "id": "bbc",
+    "name": "BBC",
+    "aliases": [],
+    "logo": "/logos/bbc.png"
+  },
+  {
+    "id": "bbc-news",
+    "name": "BBC News",
+    "aliases": [],
+    "logo": "/logos/bbc-news.png"
+  },
+  {
+    "id": "bet",
+    "name": "BET",
+    "aliases": [],
+    "logo": "/logos/bet.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "bet-her",
+    "name": "BET Her",
+    "aliases": [],
+    "logo": "/logos/bet-her.png"
+  },
+  {
+    "id": "bloomberg-originals",
+    "name": "Bloomberg Originals",
+    "aliases": [],
+    "logo": "/logos/bloomberg-originals.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "bloomberg-tv",
+    "name": "Bloomberg TV+",
+    "aliases": [],
+    "logo": "/logos/bloomberg-tv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "bounce",
+    "name": "Bounce",
+    "aliases": [],
+    "logo": "/logos/bounce.png"
+  },
+  {
+    "id": "bravo",
+    "name": "Bravo",
+    "aliases": [],
+    "logo": "/logos/bravo.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "btn",
+    "name": "BTN",
+    "aliases": [],
+    "logo": "/logos/btn.png",
+    "bgColor": "rgb(61, 170, 223)"
+  },
+  {
+    "id": "c-span",
+    "name": "C-SPAN",
+    "aliases": [],
+    "logo": "/logos/c-span.png",
+    "bgColor": "rgb(0, 26, 114)"
+  },
+  {
+    "id": "c-span-2",
+    "name": "C-SPAN 2",
+    "aliases": [
+      "C-SPAN2"
+    ],
+    "logo": "/logos/c-span-2.png",
+    "bgColor": "rgb(186, 12, 47)"
+  },
+  {
+    "id": "c-span-3",
+    "name": "C-SPAN 3",
+    "aliases": [
+      "C-SPAN3"
+    ],
+    "logo": "/logos/c-span-3.png",
+    "bgColor": "rgb(241, 179, 0)"
+  },
+  {
+    "id": "cars-tv",
+    "name": "Cars TV",
+    "aliases": [],
+    "logo": "/logos/cars-tv.png"
+  },
+  {
+    "id": "cartoon-network",
+    "name": "Cartoon Network",
+    "aliases": [],
+    "logo": "/logos/cartoon-network.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "cbs",
+    "name": "CBS",
+    "aliases": [],
+    "logo": "/logos/cbs.png"
+  },
+  {
+    "id": "cbs-sports",
+    "name": "CBS Sports",
+    "aliases": [
+      "CBS Sports Network"
+    ],
+    "logo": "/logos/cbs-sports.png",
+    "bgColor": "rgb(2, 56, 98)"
+  },
+  {
+    "id": "charge",
+    "name": "Charge!",
+    "aliases": [
+      "CHARGE!"
+    ],
+    "logo": "/logos/charge.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "cheddar",
+    "name": "Cheddar",
+    "aliases": [],
+    "logo": "/logos/cheddar.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "cheddar-news",
+    "name": "Cheddar News",
+    "aliases": [],
+    "logo": "/logos/cheddar-news.png"
+  },
+  {
+    "id": "cmt",
+    "name": "CMT",
+    "aliases": [],
+    "logo": "/logos/cmt.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "cnbc",
+    "name": "CNBC",
+    "aliases": [],
+    "logo": "/logos/cnbc.png",
+    "bgColor": "rgb(0, 89, 131)"
+  },
+  {
+    "id": "cnbc-world",
+    "name": "CNBC World",
+    "aliases": [],
+    "logo": "/logos/cnbc-world.png"
+  },
+  {
+    "id": "cnn",
+    "name": "CNN",
+    "aliases": [],
+    "logo": "/logos/cnn.png",
+    "bgColor": "rgb(204, 0, 0)"
+  },
+  {
+    "id": "comedy-central",
+    "name": "Comedy Central",
+    "aliases": [],
+    "logo": "/logos/comedy-central.png",
+    "bgColor": "rgb(251, 190, 19)"
+  },
+  {
+    "id": "comedy-tv",
+    "name": "Comedy.TV",
+    "aliases": [],
+    "logo": "/logos/comedy-tv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "comet-tv",
+    "name": "Comet TV",
+    "aliases": [],
+    "logo": "/logos/comet-tv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "courttv",
+    "name": "CourtTV",
+    "aliases": [],
+    "logo": "/logos/courttv.png"
+  },
+  {
+    "id": "cozi-tv",
+    "name": "Cozi TV",
+    "aliases": [
+      "Cozi"
+    ],
+    "logo": "/logos/cozi-tv.png",
+    "bgColor": "rgb(14, 54, 80)"
+  },
+  {
+    "id": "dabl",
+    "name": "Dabl",
+    "aliases": [],
+    "logo": "/logos/dabl.png",
+    "bgColor": "rgb(254, 99, 15)"
+  },
+  {
+    "id": "discovery",
+    "name": "Discovery",
+    "aliases": [
+      "Discovery Channel"
+    ],
+    "logo": "/logos/discovery.png",
+    "bgColor": "rgb(28, 102, 147)"
+  },
+  {
+    "id": "discoveryturbo",
+    "name": "DiscoveryTurbo",
+    "aliases": [
+      "Discovery Turbo"
+    ],
+    "logo": "/logos/discoveryturbo.png",
+    "bgColor": "rgb(35, 31, 32)"
+  },
+  {
+    "id": "disney",
+    "name": "Disney",
+    "aliases": [
+      "Disney Channel"
+    ],
+    "logo": "/logos/disney.png",
+    "bgColor": "rgb(82, 12, 156)"
+  },
+  {
+    "id": "disney-junior",
+    "name": "Disney Junior",
+    "aliases": [],
+    "logo": "/logos/disney-junior.png",
+    "bgColor": "rgb(82, 12, 156)"
+  },
+  {
+    "id": "disney-xd",
+    "name": "Disney XD",
+    "aliases": [],
+    "logo": "/logos/disney-xd.png",
+    "bgColor": "rgb(82, 12, 156)"
+  },
+  {
+    "id": "docurama",
+    "name": "Docurama",
+    "aliases": [],
+    "logo": "/logos/docurama.png"
+  },
+  {
+    "id": "dove",
+    "name": "Dove",
+    "aliases": [],
+    "logo": "/logos/dove.png"
+  },
+  {
+    "id": "e",
+    "name": "E!",
+    "aliases": [],
+    "logo": "/logos/e.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "espn",
+    "name": "ESPN",
+    "aliases": [],
+    "logo": "/logos/espn.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "espn-2",
+    "name": "ESPN 2",
+    "aliases": [
+      "ESPN2"
+    ],
+    "logo": "/logos/espn-2.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "espn-u",
+    "name": "ESPN U",
+    "aliases": [
+      "ESPNU"
+    ],
+    "logo": "/logos/espn-u.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "espnews",
+    "name": "ESPNEWS",
+    "aliases": [
+      "ESPNews"
+    ],
+    "logo": "/logos/espnews.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "estrellatv",
+    "name": "EstrellaTV",
+    "aliases": [],
+    "logo": "/logos/estrellatv.png"
+  },
+  {
+    "id": "food-network",
+    "name": "Food Network",
+    "aliases": [],
+    "logo": "/logos/food-network.png",
+    "bgColor": "rgb(202, 0, 33)"
+  },
+  {
+    "id": "fox-business",
+    "name": "FOX Business",
+    "aliases": [],
+    "logo": "/logos/fox-business.png",
+    "bgColor": "rgb(36, 66, 145)"
+  },
+  {
+    "id": "fox-network",
+    "name": "FOX Network",
+    "aliases": [],
+    "logo": "/logos/fox-network.png"
+  },
+  {
+    "id": "fox-news-channel",
+    "name": "FOX News Channel",
+    "aliases": [
+      "FOX News"
+    ],
+    "logo": "/logos/fox-news-channel.png",
+    "bgColor": "rgb(24, 58, 82)"
+  },
+  {
+    "id": "fox-soul",
+    "name": "FOX SOUL",
+    "aliases": [],
+    "logo": "/logos/fox-soul.png"
+  },
+  {
+    "id": "fox-weather",
+    "name": "FOX Weather",
+    "aliases": [],
+    "logo": "/logos/fox-weather.png",
+    "bgColor": "rgb(33, 113, 176)"
+  },
+  {
+    "id": "freeform",
+    "name": "Freeform",
+    "aliases": [],
+    "logo": "/logos/freeform.png",
+    "bgColor": "rgb(0, 122, 255)"
+  },
+  {
+    "id": "fs1",
+    "name": "FS1",
+    "aliases": [],
+    "logo": "/logos/fs1.png",
+    "bgColor": "rgb(0, 45, 86)"
+  },
+  {
+    "id": "fs2",
+    "name": "FS2",
+    "aliases": [],
+    "logo": "/logos/fs2.png",
+    "bgColor": "rgb(0, 45, 86)"
+  },
+  {
+    "id": "fx",
+    "name": "FX",
+    "aliases": [],
+    "logo": "/logos/fx.png",
+    "bgColor": "rgb(237, 31, 35)"
+  },
+  {
+    "id": "fxm",
+    "name": "FXM",
+    "aliases": [],
+    "logo": "/logos/fxm.png",
+    "bgColor": "rgb(237, 31, 35)"
+  },
+  {
+    "id": "fxx",
+    "name": "FXX",
+    "aliases": [],
+    "logo": "/logos/fxx.png",
+    "bgColor": "rgb(237, 31, 35)"
+  },
+  {
+    "id": "galavision",
+    "name": "Galavisión",
+    "aliases": [
+      "Galavision"
+    ],
+    "logo": "/logos/galavision.png",
+    "bgColor": "rgb(239, 88, 36)"
+  },
+  {
+    "id": "game-show-network",
+    "name": "Game Show Network",
+    "aliases": [],
+    "logo": "/logos/game-show-network.png",
+    "bgColor": "rgb(30, 48, 90)"
+  },
+  {
+    "id": "gfam",
+    "name": "GFAM",
+    "aliases": [],
+    "logo": "/logos/gfam.png",
+    "bgColor": "rgb(110, 19, 38)"
+  },
+  {
+    "id": "gliv",
+    "name": "GLIV",
+    "aliases": [],
+    "logo": "/logos/gliv.png",
+    "bgColor": "rgb(18, 96, 107)"
+  },
+  {
+    "id": "golf-channel",
+    "name": "Golf Channel",
+    "aliases": [],
+    "logo": "/logos/golf-channel.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "great-american-faith-and-living",
+    "name": "Great American Faith and Living",
+    "aliases": [],
+    "logo": "/logos/great-american-faith-and-living.png"
+  },
+  {
+    "id": "great-american-family",
+    "name": "Great American Family",
+    "aliases": [],
+    "logo": "/logos/great-american-family.png"
+  },
+  {
+    "id": "great-tv",
+    "name": "GREAT TV",
+    "aliases": [
+      "GREAT"
+    ],
+    "logo": "/logos/great-tv.png",
+    "bgColor": "rgb(147, 39, 143)"
+  },
+  {
+    "id": "hallmark-channel",
+    "name": "Hallmark Channel",
+    "aliases": [],
+    "logo": "/logos/hallmark-channel.png",
+    "bgColor": "rgb(59, 171, 209)"
+  },
+  {
+    "id": "hallmark-family",
+    "name": "Hallmark Family",
+    "aliases": [],
+    "logo": "/logos/hallmark-family.png",
+    "bgColor": "rgb(59, 171, 209)"
+  },
+  {
+    "id": "hallmark-movies-mysteries",
+    "name": "Hallmark Movies & Mysteries",
+    "aliases": [
+      "Hallmark Mystery"
+    ],
+    "logo": "/logos/hallmark-movies-mysteries.png",
+    "bgColor": "rgb(59, 171, 209)"
+  },
+  {
+    "id": "hbcu-go",
+    "name": "HBCU GO",
+    "aliases": [],
+    "logo": "/logos/hbcu-go.png"
+  },
+  {
+    "id": "hgtv",
+    "name": "HGTV",
+    "aliases": [],
+    "logo": "/logos/hgtv.png",
+    "bgColor": "rgb(0, 174, 239)"
+  },
+  {
+    "id": "hln",
+    "name": "HLN",
+    "aliases": [],
+    "logo": "/logos/hln.png",
+    "bgColor": "rgb(30, 74, 213)"
+  },
+  {
+    "id": "hsn",
+    "name": "HSN",
+    "aliases": [],
+    "logo": "/logos/hsn.png",
+    "bgColor": "rgb(0, 119, 200)"
+  },
+  {
+    "id": "ifc",
+    "name": "IFC",
+    "aliases": [],
+    "logo": "/logos/ifc.png"
+  },
+  {
+    "id": "investigation-discovery",
+    "name": "Investigation Discovery",
+    "aliases": [
+      "ID"
+    ],
+    "logo": "/logos/investigation-discovery.png",
+    "bgColor": "rgb(49, 106, 71)"
+  },
+  {
+    "id": "ion",
+    "name": "ION",
+    "aliases": [],
+    "logo": "/logos/ion.png",
+    "bgColor": "rgb(255, 114, 34)"
+  },
+  {
+    "id": "justicecentral-tv",
+    "name": "JusticeCentral.TV",
+    "aliases": [],
+    "logo": "/logos/justicecentral-tv.png"
+  },
+  {
+    "id": "law-crime",
+    "name": "Law & Crime",
+    "aliases": [],
+    "logo": "/logos/law-crime.png"
+  },
+  {
+    "id": "livenow-from-fox",
+    "name": "LiveNOW from Fox",
+    "aliases": [
+      "LiveNOW from FOX"
+    ],
+    "logo": "/logos/livenow-from-fox.png",
+    "bgColor": "rgb(0, 21, 78)"
+  },
+  {
+    "id": "local-abc",
+    "name": "Local ABC affiliate",
+    "aliases": [],
+    "logo": "/logos/local-abc.png",
+    "bgColor": "rgb(246, 184, 26)"
+  },
+  {
+    "id": "local-cbs",
+    "name": "Local CBS affiliate",
+    "aliases": [],
+    "logo": "/logos/local-cbs.png",
+    "bgColor": "rgb(20, 56, 95)"
+  },
+  {
+    "id": "local-cw",
+    "name": "Local CW affiliate",
+    "aliases": [],
+    "logo": "/logos/local-cw.png",
+    "bgColor": "rgb(255, 69, 0)"
+  },
+  {
+    "id": "local-fox",
+    "name": "Local FOX affiliate",
+    "aliases": [],
+    "logo": "/logos/local-fox.png",
+    "bgColor": "rgb(7, 93, 170)"
+  },
+  {
+    "id": "local-nbc",
+    "name": "Local NBC affiliate",
+    "aliases": [],
+    "logo": "/logos/local-nbc.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "local-now",
+    "name": "Local Now",
+    "aliases": [],
+    "logo": "/logos/local-now.png"
+  },
+  {
+    "id": "local-pbs",
+    "name": "Local PBS station",
+    "aliases": [],
+    "logo": "/logos/local-pbs.png",
+    "bgColor": "rgb(38, 56, 196)"
+  },
+  {
+    "id": "localish",
+    "name": "Localish",
+    "aliases": [],
+    "logo": "/logos/localish.png"
+  },
+  {
+    "id": "magnolia-network",
+    "name": "Magnolia Network",
+    "aliases": [
+      "Magnolia Network (Pacific)"
+    ],
+    "logo": "/logos/magnolia-network.png",
+    "bgColor": "rgb(35, 35, 35)"
+  },
+  {
+    "id": "motortrend",
+    "name": "Motortrend",
+    "aliases": [],
+    "logo": "/logos/motortrend.png"
+  },
+  {
+    "id": "ms-now",
+    "name": "MS NOW",
+    "aliases": [],
+    "logo": "/logos/ms-now.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "mtv",
+    "name": "MTV",
+    "aliases": [],
+    "logo": "/logos/mtv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "mtv-classic",
+    "name": "MTV Classic",
+    "aliases": [],
+    "logo": "/logos/mtv-classic.png"
+  },
+  {
+    "id": "mtv2",
+    "name": "MTV2",
+    "aliases": [],
+    "logo": "/logos/mtv2.png"
+  },
+  {
+    "id": "mynetworktv",
+    "name": "MyNetworkTV",
+    "aliases": [],
+    "logo": "/logos/mynetworktv.png"
+  },
+  {
+    "id": "natgeo-wild",
+    "name": "NatGeo Wild",
+    "aliases": [
+      "Nat Geo Wild"
+    ],
+    "logo": "/logos/natgeo-wild.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "national-geographic",
+    "name": "National Geographic",
+    "aliases": [
+      "Nat Geo"
+    ],
+    "logo": "/logos/national-geographic.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "nba-tv",
+    "name": "NBA TV",
+    "aliases": [],
+    "logo": "/logos/nba-tv.png",
+    "bgColor": "rgb(29, 66, 138)"
+  },
+  {
+    "id": "nbc",
+    "name": "NBC",
+    "aliases": [],
+    "logo": "/logos/nbc.png"
+  },
+  {
+    "id": "nbc-news-now",
+    "name": "NBC News Now",
+    "aliases": [
+      "NBC News NOW"
+    ],
+    "logo": "/logos/nbc-news-now.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "nbc-universo",
+    "name": "NBC Universo",
+    "aliases": [],
+    "logo": "/logos/nbc-universo.png"
+  },
+  {
+    "id": "nbcsn",
+    "name": "NBCSN",
+    "aliases": [
+      "NBC Sports Network"
+    ],
+    "logo": "/logos/nbcsn.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "necn",
+    "name": "NECN",
+    "aliases": [],
+    "logo": "/logos/necn.png"
+  },
+  {
+    "id": "newsmax",
+    "name": "Newsmax",
+    "aliases": [
+      "NEWSMAX"
+    ],
+    "logo": "/logos/newsmax.png",
+    "bgColor": "rgb(52, 77, 161)"
+  },
+  {
+    "id": "newsnation",
+    "name": "NEWSNATION",
+    "aliases": [
+      "NewsNation"
+    ],
+    "logo": "/logos/newsnation.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "nfl-network",
+    "name": "NFL Network",
+    "aliases": [],
+    "logo": "/logos/nfl-network.png",
+    "bgColor": "rgb(1, 51, 105)"
+  },
+  {
+    "id": "nick-jr",
+    "name": "Nick Jr",
+    "aliases": [
+      "Nick Jr."
+    ],
+    "logo": "/logos/nick-jr.png",
+    "bgColor": "rgb(79, 198, 229)"
+  },
+  {
+    "id": "nickelodeon",
+    "name": "Nickelodeon",
+    "aliases": [],
+    "logo": "/logos/nickelodeon.png",
+    "bgColor": "rgb(255, 103, 0)"
+  },
+  {
+    "id": "nicktoons",
+    "name": "Nicktoons",
+    "aliases": [],
+    "logo": "/logos/nicktoons.png"
+  },
+  {
+    "id": "oan",
+    "name": "OAN",
+    "aliases": [
+      "One America News"
+    ],
+    "logo": "/logos/oan.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "orlando-city",
+    "name": "Orlando City",
+    "aliases": [],
+    "logo": "/logos/orlando-city.png"
+  },
+  {
+    "id": "own",
+    "name": "OWN",
+    "aliases": [],
+    "logo": "/logos/own.png",
+    "bgColor": "rgb(216, 184, 95)"
+  },
+  {
+    "id": "oxygen",
+    "name": "Oxygen",
+    "aliases": [],
+    "logo": "/logos/oxygen.png"
+  },
+  {
+    "id": "oxygen-true-crime",
+    "name": "Oxygen True Crime",
+    "aliases": [],
+    "logo": "/logos/oxygen-true-crime.png",
+    "bgColor": "rgb(232, 220, 0)"
+  },
+  {
+    "id": "paramount-network",
+    "name": "Paramount Network",
+    "aliases": [
+      "Paramount"
+    ],
+    "logo": "/logos/paramount-network.png",
+    "bgColor": "rgb(1, 102, 164)"
+  },
+  {
+    "id": "pbs",
+    "name": "PBS",
+    "aliases": [],
+    "logo": "/logos/pbs.png"
+  },
+  {
+    "id": "pc",
+    "name": "PC",
+    "aliases": [],
+    "logo": "/logos/pc.png"
+  },
+  {
+    "id": "pets-tv",
+    "name": "Pets TV",
+    "aliases": [],
+    "logo": "/logos/pets-tv.png"
+  },
+  {
+    "id": "pickleballtv",
+    "name": "PickleballTV",
+    "aliases": [
+      "Pickleball TV"
+    ],
+    "logo": "/logos/pickleballtv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "pop",
+    "name": "POP",
+    "aliases": [
+      "Pop"
+    ],
+    "logo": "/logos/pop.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "portlandia",
+    "name": "Portlandia",
+    "aliases": [],
+    "logo": "/logos/portlandia.png"
+  },
+  {
+    "id": "qvc",
+    "name": "QVC",
+    "aliases": [],
+    "logo": "/logos/qvc.png",
+    "bgColor": "rgb(243, 120, 100)"
+  },
+  {
+    "id": "recipe-tv",
+    "name": "Recipe.TV",
+    "aliases": [],
+    "logo": "/logos/recipe-tv.png"
+  },
+  {
+    "id": "roar",
+    "name": "ROAR",
+    "aliases": [],
+    "logo": "/logos/roar.png",
+    "bgColor": "rgb(85, 37, 130)"
+  },
+  {
+    "id": "scripps-news",
+    "name": "Scripps News",
+    "aliases": [],
+    "logo": "/logos/scripps-news.png"
+  },
+  {
+    "id": "sec-espn-network",
+    "name": "SEC ESPN Network",
+    "aliases": [
+      "SEC Network"
+    ],
+    "logo": "/logos/sec-espn-network.png",
+    "bgColor": "rgb(221, 0, 0)"
+  },
+  {
+    "id": "smithsonian-channel",
+    "name": "Smithsonian Channel",
+    "aliases": [],
+    "logo": "/logos/smithsonian-channel.png",
+    "bgColor": "rgb(239, 49, 38)"
+  },
+  {
+    "id": "starttv",
+    "name": "StartTV",
+    "aliases": [
+      "Start TV"
+    ],
+    "logo": "/logos/starttv.png",
+    "bgColor": "rgb(31, 36, 85)"
+  },
+  {
+    "id": "stories-by-amc",
+    "name": "Stories by AMC",
+    "aliases": [],
+    "logo": "/logos/stories-by-amc.png"
+  },
+  {
+    "id": "sundancetv",
+    "name": "SundanceTV",
+    "aliases": [],
+    "logo": "/logos/sundancetv.png"
+  },
+  {
+    "id": "syfy",
+    "name": "SyFy",
+    "aliases": [
+      "SYFY"
+    ],
+    "logo": "/logos/syfy.png",
+    "bgColor": "rgb(0, 0, 1)"
+  },
+  {
+    "id": "t2",
+    "name": "T2",
+    "aliases": [],
+    "logo": "/logos/t2.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "tastemade",
+    "name": "Tastemade",
+    "aliases": [],
+    "logo": "/logos/tastemade.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "tbs",
+    "name": "TBS",
+    "aliases": [],
+    "logo": "/logos/tbs.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "tcm",
+    "name": "TCM",
+    "aliases": [
+      "Turner Classic Movies"
+    ],
+    "logo": "/logos/tcm.png",
+    "bgColor": "rgb(50, 50, 50)"
+  },
+  {
+    "id": "teen-nick",
+    "name": "Teen Nick",
+    "aliases": [],
+    "logo": "/logos/teen-nick.png"
+  },
+  {
+    "id": "telemundo",
+    "name": "Telemundo",
+    "aliases": [],
+    "logo": "/logos/telemundo.png"
+  },
+  {
+    "id": "the-cw",
+    "name": "The CW",
+    "aliases": [],
+    "logo": "/logos/the-cw.png"
+  },
+  {
+    "id": "the-great-courses",
+    "name": "The Great Courses",
+    "aliases": [],
+    "logo": "/logos/the-great-courses.png"
+  },
+  {
+    "id": "the-grio",
+    "name": "The GRIO",
+    "aliases": [],
+    "logo": "/logos/the-grio.png"
+  },
+  {
+    "id": "the-nest",
+    "name": "The Nest",
+    "aliases": [],
+    "logo": "/logos/the-nest.png",
+    "bgColor": "rgb(0, 136, 190)"
+  },
+  {
+    "id": "the-walking-dead-universe",
+    "name": "The Walking Dead Universe",
+    "aliases": [],
+    "logo": "/logos/the-walking-dead-universe.png"
+  },
+  {
+    "id": "the-weather-channel",
+    "name": "The Weather Channel",
+    "aliases": [],
+    "logo": "/logos/the-weather-channel.png",
+    "bgColor": "rgb(0, 128, 186)"
+  },
+  {
+    "id": "tlc",
+    "name": "TLC",
+    "aliases": [],
+    "logo": "/logos/tlc.png",
+    "bgColor": "rgb(235, 18, 43)"
+  },
+  {
+    "id": "tnt",
+    "name": "TNT",
+    "aliases": [],
+    "logo": "/logos/tnt.png",
+    "bgColor": "rgb(22, 27, 31)"
+  },
+  {
+    "id": "travel-channel",
+    "name": "Travel Channel",
+    "aliases": [],
+    "logo": "/logos/travel-channel.png",
+    "bgColor": "rgb(44, 15, 40)"
+  },
+  {
+    "id": "trutv",
+    "name": "TruTV",
+    "aliases": [
+      "truTV"
+    ],
+    "logo": "/logos/trutv.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "tudn",
+    "name": "TUDN",
+    "aliases": [],
+    "logo": "/logos/tudn.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "tv-land",
+    "name": "TV Land",
+    "aliases": [],
+    "logo": "/logos/tv-land.png",
+    "bgColor": "rgb(76, 135, 229)"
+  },
+  {
+    "id": "tyt",
+    "name": "TYT",
+    "aliases": [
+      "TYT Network"
+    ],
+    "logo": "/logos/tyt.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "unimas",
+    "name": "UniMás",
+    "aliases": [
+      "UniMas"
+    ],
+    "logo": "/logos/unimas.png",
+    "bgColor": "rgb(239, 12, 127)"
+  },
+  {
+    "id": "univision",
+    "name": "Univision",
+    "aliases": [],
+    "logo": "/logos/univision.png",
+    "bgColor": "rgb(29, 29, 234)"
+  },
+  {
+    "id": "usa",
+    "name": "USA",
+    "aliases": [],
+    "logo": "/logos/usa.png",
+    "bgColor": "rgb(0, 30, 96)"
+  },
+  {
+    "id": "vh1",
+    "name": "VH1",
+    "aliases": [],
+    "logo": "/logos/vh1.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "we-tv",
+    "name": "WE TV",
+    "aliases": [],
+    "logo": "/logos/we-tv.png"
+  },
+  {
+    "id": "wnba-on-ion",
+    "name": "WNBA on Ion",
+    "aliases": [
+      "WNBA on ION"
+    ],
+    "logo": "/logos/wnba-on-ion.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "world-at-war",
+    "name": "World at War",
+    "aliases": [],
+    "logo": "/logos/world-at-war.png",
+    "bgColor": "rgb(0, 0, 0)"
+  },
+  {
+    "id": "youtube-originals",
+    "name": "YouTube Originals",
+    "aliases": [],
+    "logo": "/logos/youtube-originals.png"
+  },
+  {
+    "id": "zen",
+    "name": "Zen",
+    "aliases": [],
+    "logo": "/logos/zen.png"
+  }
+]
