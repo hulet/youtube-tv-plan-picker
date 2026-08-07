@@ -15,7 +15,10 @@
 </script>
 
 <header>
-  <h1>YouTube TV Plan Picker</h1>
+  <h1>
+    <img src="/favicon.svg" alt="" class="brand-mark" />
+    <span>YouTube TV Plan Picker</span>
+  </h1>
   <p class="lede">
     Pick the channels you actually watch. This tool tells you the cheapest
     YouTube TV plan that includes every one of them.
@@ -36,7 +39,18 @@
     padding: 1rem 0 1.5rem;
     border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent);
   }
-  h1 { margin: 0; font-size: 1.6rem; }
+  h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .brand-mark {
+    width: 1.4em;
+    height: 1.4em;
+    flex: 0 0 auto;
+  }
   .lede { margin: 0; color: color-mix(in srgb, currentColor 75%, transparent); max-width: 60ch; }
   .share { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.25rem; }
   button {
