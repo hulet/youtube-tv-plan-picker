@@ -18,6 +18,7 @@
     "svelte-check": "*",
     "tslib": "*",
     "typescript": "*",
-    "vite": "^5"
+    "vite": "^5",
+    "vitest": "^4.1.10"
   }
 }
