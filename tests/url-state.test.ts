@@ -6,9 +6,9 @@ describe('encodeSelection', () => {
     expect(encodeSelection(new Set())).toBe('');
   });
 
-  it('joins ids with commas in stable (sorted) order', () => {
-    expect(encodeSelection(new Set(['cnn', 'espn', 'hgtv']))).toBe('cnn,espn,hgtv');
-    expect(encodeSelection(new Set(['hgtv', 'espn', 'cnn']))).toBe('cnn,espn,hgtv');
+  it('joins ids with dots in stable (sorted) order', () => {
+    expect(encodeSelection(new Set(['cnn', 'espn', 'hgtv']))).toBe('cnn.espn.hgtv');
+    expect(encodeSelection(new Set(['hgtv', 'espn', 'cnn']))).toBe('cnn.espn.hgtv');
   });
 });
 
@@ -20,12 +20,16 @@ describe('decodeSelection', () => {
     expect(decodeSelection('', knownIds)).toEqual(new Set());
   });
 
-  it('parses comma-separated ids, keeping only known ones', () => {
+  it('parses dot-separated ids, keeping only known ones', () => {
+    expect(decodeSelection('espn.cnn.fake', knownIds)).toEqual(new Set(['espn', 'cnn']));
+  });
+
+  it('accepts legacy comma-separated URLs', () => {
     expect(decodeSelection('espn,cnn,fake', knownIds)).toEqual(new Set(['espn', 'cnn']));
   });
 
-  it('deduplicates and trims', () => {
-    expect(decodeSelection('espn,espn, cnn ,', knownIds)).toEqual(new Set(['espn', 'cnn']));
+  it('deduplicates and trims (dot separator)', () => {
+    expect(decodeSelection('espn.espn. cnn .', knownIds)).toEqual(new Set(['espn', 'cnn']));
   });
 
   it('round-trips through encode', () => {
@@ -34,7 +38,8 @@ describe('decodeSelection', () => {
   });
 
   it('handles malformed input without throwing', () => {
-    expect(() => decodeSelection(',,,', knownIds)).not.toThrow();
+    expect(() => decodeSelection('...', knownIds)).not.toThrow();
+    expect(decodeSelection('...', knownIds)).toEqual(new Set());
     expect(decodeSelection(',,,', knownIds)).toEqual(new Set());
   });
 });
