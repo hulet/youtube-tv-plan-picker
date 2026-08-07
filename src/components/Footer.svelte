@@ -23,10 +23,4 @@
   }
   footer p { margin: 0 0 0.5rem; }
   footer .fine { color: color-mix(in srgb, currentColor 50%, transparent); }
-  code {
-    background: color-mix(in srgb, currentColor 10%, transparent);
-    padding: 0.05rem 0.35rem;
-    border-radius: 3px;
-    font-size: 0.9em;
-  }
 </style>
