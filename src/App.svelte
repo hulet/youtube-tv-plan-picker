@@ -6,6 +6,7 @@
   import ChannelList from './components/ChannelList.svelte';
   import RecommendationPanel from './components/RecommendationPanel.svelte';
   import Footer from './components/Footer.svelte';
+  import ScrollToTop from './components/ScrollToTop.svelte';
   import {
     channels, selected, query, filteredChannels, matchingPlans, channelIds,
   } from './stores';
@@ -79,6 +80,8 @@
   </div>
 
   <Footer />
+
+  <ScrollToTop />
 </main>
 
 <style>
