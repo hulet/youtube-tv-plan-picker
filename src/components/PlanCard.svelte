@@ -27,7 +27,13 @@
   <div class="name">{plan.name}</div>
   <div class="price">{priceStr}</div>
   {#if variant === 'winner'}
-    <div class="covers">Covers all {selectedCount} channel{selectedCount === 1 ? '' : 's'} you picked.</div>
+    <div class="covers">
+      {#if selectedCount === 1}
+        Covers the 1 channel you picked.
+      {:else}
+        Covers all {selectedCount} channels you picked.
+      {/if}
+    </div>
   {/if}
 </button>
 
