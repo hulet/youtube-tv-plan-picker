@@ -108,7 +108,7 @@
       <p class="meta">
         <span class="price">{priceStr(plan)}</span>
         <span class="sep">·</span>
-        <span>{sortedChannels.length} channel{sortedChannels.length === 1 ? '' : 's'}</span>
+        <span>{sortedChannels.length} unique channel{sortedChannels.length === 1 ? '' : 's'}</span>
       </p>
       {#if sortedChannels.length === 0}
         <p class="empty">This plan has no channels.</p>
