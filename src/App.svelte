@@ -75,7 +75,7 @@
       <ChannelList channels={$filteredChannels} selected={$selected} onToggle={toggle} />
     </section>
     <section class="recommendation">
-      <RecommendationPanel plans={$matchingPlans} allPlans={plans} selectedCount={$selected.size} />
+      <RecommendationPanel plans={$matchingPlans} allPlans={plans} {channels} selectedCount={$selected.size} />
     </section>
   </div>
 
