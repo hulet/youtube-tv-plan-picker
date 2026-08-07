@@ -23,7 +23,7 @@
 
 <aside class="panel" aria-live="polite">
   {#if selectedCount === 0}
-    <p class="prompt">Pick some channels to see the cheapest plan.</p>
+    <p class="prompt">Pick channels to see the cheapest plan.</p>
     <div class="runners">
       <div class="runners-label">All available plans</div>
       {#each sortedAllPlans as p (p.id)}
@@ -56,16 +56,18 @@
     top: 1rem;
   }
   .prompt {
-    padding: 1rem;
+    margin: 0;
+    padding: 0.25rem 0;
     color: color-mix(in srgb, currentColor 60%, transparent);
     text-align: center;
+    font-size: 0.9rem;
   }
-  .runners { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.5rem; }
+  .runners { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.25rem; }
   .runners-label {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: color-mix(in srgb, currentColor 60%, transparent);
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
 </style>
