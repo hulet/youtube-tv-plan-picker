@@ -1,12 +1,13 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import HeaderBar from './components/HeaderBar.svelte';
+  import SelectedChannels from './components/SelectedChannels.svelte';
   import SearchBox from './components/SearchBox.svelte';
   import ChannelList from './components/ChannelList.svelte';
   import RecommendationPanel from './components/RecommendationPanel.svelte';
   import Footer from './components/Footer.svelte';
   import {
-    selected, query, filteredChannels, matchingPlans, channelIds,
+    channels, selected, query, filteredChannels, matchingPlans, channelIds,
   } from './stores';
   import { encodeSelection, decodeSelection } from './lib/url-state';
 
@@ -28,13 +29,33 @@
     }
   });
 
-  function toggle(id: string) {
+  function toggle(id: string, event?: Event) {
+    // Capture the target row's viewport Y before mutating state, so we can
+    // compensate for the SelectedChannels panel growing/shrinking above.
+    const target = event?.currentTarget;
+    const rowEl = target instanceof HTMLElement
+      ? (target.closest('label.row') as HTMLElement | null)
+      : null;
+    const beforeY = rowEl?.getBoundingClientRect().top ?? null;
+
     selected.update(s => {
       const next = new Set(s);
       if (next.has(id)) next.delete(id);
       else next.add(id);
       return next;
     });
+
+    if (rowEl && beforeY !== null) {
+      requestAnimationFrame(() => {
+        const afterY = rowEl.getBoundingClientRect().top;
+        const delta = afterY - beforeY;
+        if (delta !== 0) window.scrollBy(0, delta);
+      });
+    }
+  }
+
+  function clearSelection() {
+    selected.set(new Set());
   }
 </script>
 
@@ -43,6 +64,12 @@
 
   <div class="grid">
     <section class="channels">
+      <SelectedChannels
+        {channels}
+        selected={$selected}
+        onRemove={(id) => toggle(id)}
+        onClear={clearSelection}
+      />
       <SearchBox value={$query} onInput={(v) => query.set(v)} />
       <ChannelList channels={$filteredChannels} selected={$selected} onToggle={toggle} />
     </section>
