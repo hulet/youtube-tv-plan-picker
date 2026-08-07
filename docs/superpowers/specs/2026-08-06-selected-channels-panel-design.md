@@ -73,17 +73,61 @@ The component performs an O(n) lookup building an `id → Channel` map on render
 
 ## Wiring in `App.svelte`
 
-Two changes:
+Changes:
 
-1. Import `SelectedChannels`; render it above `<SearchBox>`. Pass `channels` (from the stores module), `$selected`, `toggle` (existing), and a new `clearSelection` handler.
+1. Import `SelectedChannels`; render it above `<SearchBox>`. Pass `channels`, `$selected`, a `toggle`-derived `onRemove` handler, and a new `clearSelection` handler.
 2. Add:
    ```ts
    function clearSelection() {
      selected.set(new Set());
    }
    ```
+3. Update the `toggle` function to compensate for viewport shift caused by the SelectedChannels panel growing/shrinking above the ChannelList (see below).
 
 The URL sync effect already fires on any `selected` change, so clearing selections empties the `c=` param automatically.
+
+## Scroll-position preservation (required)
+
+**Constraint:** Clicking a channel row to toggle it must never cause that row to move visually on screen. This applies both when selecting (which grows the SelectedChannels panel above) and when deselecting (which shrinks it).
+
+Browser scroll-anchoring (default in Chrome/Firefox/Safari via `overflow-anchor: auto`) handles the case where the panel changes size **outside the viewport**, but does nothing when the panel is currently visible and growing — the ChannelList visibly shifts and the clicked row is no longer under the pointer.
+
+Fix: measure the target row's viewport position before the toggle, then correct scroll after the DOM commits.
+
+**Implementation** in `App.svelte`:
+
+```ts
+function toggle(id: string, event?: Event) {
+  // Capture the clicked row's Y position before the DOM changes.
+  const rowEl = event?.currentTarget instanceof HTMLElement
+    ? (event.currentTarget.closest('label.row, .chip') as HTMLElement | null)
+    : null;
+  const beforeY = rowEl?.getBoundingClientRect().top ?? null;
+
+  selected.update(s => {
+    const next = new Set(s);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    return next;
+  });
+
+  // After Svelte commits the update, restore the row's Y position.
+  if (rowEl && beforeY !== null) {
+    requestAnimationFrame(() => {
+      const afterY = rowEl.getBoundingClientRect().top;
+      const delta = afterY - beforeY;
+      if (delta !== 0) window.scrollBy(0, delta);
+    });
+  }
+}
+```
+
+- ChannelRow's `onchange` handler is updated to pass the event to `toggle`.
+- SelectedChannels chips' click handler also passes the event to `onRemove` (which is `toggle`), so removing a chip preserves its position too until it disappears — actually, when the chip vanishes it's fine that the mouse is no longer over anything. What matters is that OTHER content on the page doesn't jump: the ChannelList below stays put. Since the SelectedChannels panel shrinks on chip removal, the ChannelList moves up. That IS a shift, but it can't be pinned to the removed chip (the chip is gone). The pragmatic rule: pin the clicked row when clicked from ChannelList; on chip removal, don't compensate (the removed chip is gone and there's nothing to pin to).
+
+Simpler formulation: `toggle` only compensates when the caller passes an event whose target is still in the DOM after the update. Chip clicks pass no event (or an event whose element vanishes), so no compensation runs — acceptable because chip removal causes a small ChannelList upward shift, not a jarring downward shift of a still-visible clicked target.
+
+`clearSelection()` does not compensate scroll — the whole panel collapses to its empty state. Users clicking "Clear all" understand it's a large state change; a modest viewport shift is expected.
 
 ## Order-matches-URL detail
 
@@ -117,6 +161,7 @@ No unit tests. Presentational component matching the rest of `src/components/`. 
 - Deep-link with `?c=espn,cnn,hgtv` → chips appear in `[CNN] [ESPN] [HGTV]` order on load.
 - Mobile: chips wrap cleanly, chip is large enough to tap.
 - Dark mode: colors follow OS setting.
+- **Scroll preservation**: scroll partway down the channel list, click a row → the row stays exactly under the pointer. Repeat with 10 selections growing the SelectedChannels panel; the currently-clicked row never moves on screen.
 
 ## Non-goals (v1)
 
