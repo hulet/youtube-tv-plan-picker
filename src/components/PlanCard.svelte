@@ -5,14 +5,22 @@
     plan: Plan;
     variant: 'winner' | 'runner-up';
     selectedCount: number;
+    onSelect?: (plan: Plan) => void;
   }
 
-  let { plan, variant, selectedCount }: Props = $props();
+  let { plan, variant, selectedCount, onSelect }: Props = $props();
 
   let priceStr = $derived(`$${plan.priceMonthly.toFixed(2)}/mo`);
 </script>
 
-<div class="card" class:winner={variant === 'winner'} class:runner-up={variant === 'runner-up'}>
+<button
+  type="button"
+  class="card"
+  class:winner={variant === 'winner'}
+  class:runner-up={variant === 'runner-up'}
+  onclick={() => onSelect?.(plan)}
+  aria-label={`See channels in ${plan.name}`}
+>
   {#if variant === 'winner'}
     <div class="label">Cheapest plan</div>
   {/if}
@@ -21,7 +29,7 @@
   {#if variant === 'winner'}
     <div class="covers">Covers all {selectedCount} channel{selectedCount === 1 ? '' : 's'} you picked.</div>
   {/if}
-</div>
+</button>
 
 <style>
   .card {
@@ -30,12 +38,25 @@
     border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
     gap: 0.25rem;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    width: 100%;
+  }
+  .card:hover { background: color-mix(in srgb, currentColor 4%, transparent); }
+  .card:focus-visible {
+    outline: 2px solid color-mix(in srgb, currentColor 40%, transparent);
+    outline-offset: 2px;
   }
   .card.winner {
     background: color-mix(in srgb, currentColor 4%, transparent);
     border-color: color-mix(in srgb, currentColor 30%, transparent);
   }
+  .card.winner:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
   .card.runner-up { padding: 0.6rem 0.9rem; }
   .label {
     font-size: 0.75rem;
