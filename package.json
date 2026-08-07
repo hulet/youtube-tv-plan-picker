@@ -1,0 +1,23 @@
+{
+  "name": "youtube-tv-plan-picker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^4",
+    "@tsconfig/svelte": "*",
+    "svelte": "^5",
+    "svelte-check": "*",
+    "tslib": "*",
+    "typescript": "*",
+    "vite": "^5"
+  }
+}
