@@ -6,8 +6,7 @@
 <footer>
   <p>
     Notice an error? Have plan lineups changed?
-    <a href={REPO_URL} target="_blank" rel="noopener">Submit a pull request</a>
-    against <code>data/plans.json</code>.
+    <a href={REPO_URL} target="_blank" rel="noopener">Submit a pull request</a>.
   </p>
   <p class="fine">
     Not affiliated with YouTube or Google. Data current as of {dataUpdated}.
