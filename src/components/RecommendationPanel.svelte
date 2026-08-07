@@ -3,16 +3,27 @@
   import PlanCard from './PlanCard.svelte';
 
   interface Props {
-    plans: Plan[];
+    plans: Plan[];        // plans covering the current selection, cheapest first
+    allPlans: Plan[];     // every plan, shown when nothing is selected
     selectedCount: number;
   }
 
-  let { plans, selectedCount }: Props = $props();
+  let { plans, allPlans, selectedCount }: Props = $props();
+
+  const sortedAllPlans = $derived(
+    [...allPlans].sort((a, b) => a.priceMonthly - b.priceMonthly),
+  );
 </script>
 
 <aside class="panel" aria-live="polite">
   {#if selectedCount === 0}
     <p class="prompt">Pick some channels to see the cheapest plan.</p>
+    <div class="runners">
+      <div class="runners-label">All available plans</div>
+      {#each sortedAllPlans as p (p.id)}
+        <PlanCard plan={p} variant="runner-up" {selectedCount} />
+      {/each}
+    </div>
   {:else if plans.length === 0}
     <p class="prompt">No single plan covers all your selections — try removing a channel.</p>
   {:else}

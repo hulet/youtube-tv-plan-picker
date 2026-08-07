@@ -8,7 +8,7 @@
   import Footer from './components/Footer.svelte';
   import ScrollToTop from './components/ScrollToTop.svelte';
   import {
-    channels, selected, query, filteredChannels, matchingPlans, channelIds,
+    channels, plans, selected, query, filteredChannels, matchingPlans, channelIds,
   } from './stores';
   import { encodeSelection, decodeSelection } from './lib/url-state';
 
@@ -75,7 +75,7 @@
       <ChannelList channels={$filteredChannels} selected={$selected} onToggle={toggle} />
     </section>
     <section class="recommendation">
-      <RecommendationPanel plans={$matchingPlans} selectedCount={$selected.size} />
+      <RecommendationPanel plans={$matchingPlans} allPlans={plans} selectedCount={$selected.size} />
     </section>
   </div>
 
