@@ -4,7 +4,7 @@
   interface Props {
     channel: Channel;
     checked: boolean;
-    onToggle: (id: string) => void;
+    onToggle: (id: string, event?: Event) => void;
   }
 
   let { channel, checked, onToggle }: Props = $props();
@@ -18,7 +18,7 @@
   <input
     type="checkbox"
     {checked}
-    onchange={() => onToggle(channel.id)}
+    onchange={(e) => onToggle(channel.id, e)}
     aria-label={`Select ${channel.name}`}
   />
 </label>
