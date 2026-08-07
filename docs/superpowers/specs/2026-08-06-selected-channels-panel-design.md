@@ -163,6 +163,42 @@ No unit tests. Presentational component matching the rest of `src/components/`. 
 - Dark mode: colors follow OS setting.
 - **Scroll preservation**: scroll partway down the channel list, click a row → the row stays exactly under the pointer. Repeat with 10 selections growing the SelectedChannels panel; the currently-clicked row never moves on screen.
 
+## Scroll-to-top button
+
+A floating button appears at bottom-right when the user has scrolled past the SelectedChannels panel, providing one-click return to it.
+
+**Component:** `src/components/ScrollToTop.svelte`.
+
+**Behavior:**
+- Hidden by default.
+- Visible when `window.scrollY > <threshold>` — threshold is the initial Y position of the SelectedChannels panel plus its height (so the button appears exactly when the panel scrolls out of view).
+  - Implementation: use `IntersectionObserver` on the SelectedChannels root element. Observe entries; the button is visible iff the observed element is not intersecting the viewport.
+  - Fallback for missing IO: `scroll` event listener with a scrollY threshold, throttled via `requestAnimationFrame`.
+- On click: `window.scrollTo({ top: 0, behavior: 'smooth' })`.
+- On appear/disappear: opacity + translate transition (200ms) so it doesn't pop in abruptly.
+
+**Position:** `position: fixed; bottom: 1.5rem; right: 1.5rem;` — respects safe areas on mobile via `env(safe-area-inset-*)`.
+
+**Style:**
+- Circular button, ~44px diameter (WCAG AA touch target).
+- Subtle drop shadow for elevation.
+- System-adaptive palette matching the rest of the app.
+- Contains a single up-arrow SVG (24×24) or Unicode `↑`.
+- `aria-label="Scroll to top"`.
+
+**Wiring in `App.svelte`:**
+- Import and render `<ScrollToTop />` inside `<main>`, at the end (order doesn't matter since it's `position: fixed`).
+- The component internally holds a reference to the SelectedChannels element via a shared ID or a Svelte ref pattern. Simpler alternative: pass the threshold as a prop from App, or use a `data-scroll-top-anchor` attribute on the SelectedChannels root that ScrollToTop queries on mount.
+
+Recommendation: use a `data-scroll-top-anchor` attribute on the SelectedChannels root element and have ScrollToTop query `document.querySelector('[data-scroll-top-anchor]')` on mount. Keeps the two components decoupled. If the anchor isn't found (e.g., panel didn't render), the button falls back to a fixed `scrollY > 400` threshold.
+
+**Testing (manual):**
+- Short pages (no scroll needed): button never appears.
+- Scroll past the SelectedChannels panel: button fades in.
+- Click button: smooth scroll to top; button fades out once panel is back in view.
+- Mobile with iOS safe areas: button not clipped by home indicator.
+- Keyboard nav: button is focusable and Enter triggers scroll.
+
 ## Non-goals (v1)
 
 - No animation on chip add/remove. If jitter proves distracting later, a simple CSS transition can be added.
