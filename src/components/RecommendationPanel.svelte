@@ -19,6 +19,16 @@
   let openPlan: Plan | null = $state(null);
 
   const winner = $derived(selectedCount > 0 && plans.length > 0 ? plans[0] : null);
+
+  // All plans tied at the cheapest price. Shown as "cheapest plan(s)".
+  const cheapestPlans = $derived(
+    plans.length > 0
+      ? plans.filter(p => p.priceMonthly === plans[0].priceMonthly)
+      : [],
+  );
+
+  // Everything more expensive than the cheapest tier.
+  const runnerUpPlans = $derived(plans.slice(cheapestPlans.length));
 </script>
 
 <aside class="panel" aria-live="polite">
@@ -33,11 +43,13 @@
   {:else if plans.length === 0}
     <p class="prompt">No single plan covers all your selections — try removing a channel.</p>
   {:else}
-    <PlanCard plan={plans[0]} variant="winner" {selectedCount} onSelect={(pl) => openPlan = pl} />
-    {#if plans.length > 1}
+    {#each cheapestPlans as p (p.id)}
+      <PlanCard plan={p} variant="winner" {selectedCount} onSelect={(pl) => openPlan = pl} />
+    {/each}
+    {#if runnerUpPlans.length > 0}
       <div class="runners">
         <div class="runners-label">Other matching plans</div>
-        {#each plans.slice(1) as p (p.id)}
+        {#each runnerUpPlans as p (p.id)}
           <PlanCard plan={p} variant="runner-up" {selectedCount} onSelect={(pl) => openPlan = pl} />
         {/each}
       </div>
