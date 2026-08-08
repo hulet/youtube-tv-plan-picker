@@ -481,14 +481,18 @@
   {
     "id": "gfam",
     "name": "GFAM",
-    "aliases": [],
+    "aliases": [
+      "Great American Family"
+    ],
     "logo": "/logos/gfam.png",
     "bgColor": "rgb(110, 19, 38)"
   },
   {
     "id": "gliv",
     "name": "GLIV",
-    "aliases": [],
+    "aliases": [
+      "Great American Faith and Living"
+    ],
     "logo": "/logos/gliv.png",
     "bgColor": "rgb(18, 96, 107)"
   },
@@ -498,18 +502,6 @@
     "aliases": [],
     "logo": "/logos/golf-channel.png",
     "bgColor": "rgb(0, 0, 0)"
-  },
-  {
-    "id": "great-american-faith-and-living",
-    "name": "Great American Faith and Living",
-    "aliases": [],
-    "logo": "/logos/great-american-faith-and-living.png"
-  },
-  {
-    "id": "great-american-family",
-    "name": "Great American Family",
-    "aliases": [],
-    "logo": "/logos/great-american-family.png"
   },
   {
     "id": "great-tv",
