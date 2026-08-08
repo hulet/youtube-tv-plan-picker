@@ -614,52 +614,10 @@
     "bgColor": "rgb(0, 21, 78)"
   },
   {
-    "id": "local-abc",
-    "name": "Local ABC affiliate",
-    "aliases": [],
-    "logo": "/logos/local-abc.png",
-    "bgColor": "rgb(246, 184, 26)"
-  },
-  {
-    "id": "local-cbs",
-    "name": "Local CBS affiliate",
-    "aliases": [],
-    "logo": "/logos/local-cbs.png",
-    "bgColor": "rgb(20, 56, 95)"
-  },
-  {
-    "id": "local-cw",
-    "name": "Local CW affiliate",
-    "aliases": [],
-    "logo": "/logos/local-cw.png",
-    "bgColor": "rgb(255, 69, 0)"
-  },
-  {
-    "id": "local-fox",
-    "name": "Local FOX affiliate",
-    "aliases": [],
-    "logo": "/logos/local-fox.png",
-    "bgColor": "rgb(7, 93, 170)"
-  },
-  {
-    "id": "local-nbc",
-    "name": "Local NBC affiliate",
-    "aliases": [],
-    "logo": "/logos/local-nbc.png",
-    "bgColor": "rgb(0, 0, 0)"
-  },
-  {
     "id": "local-now",
     "name": "Local Now",
     "aliases": [],
     "logo": "/logos/local-now.png"
-  },
-  {
-    "id": "local-pbs",
-    "name": "Local PBS station",
-    "aliases": [],
-    "logo": "/logos/local-pbs.png",
-    "bgColor": "rgb(38, 56, 196)"
   },
   {
     "id": "localish",
@@ -871,6 +829,13 @@
     "name": "PBS",
     "aliases": [],
     "logo": "/logos/pbs.png"
+  },
+  {
+    "id": "pbs-kids",
+    "name": "PBS Kids",
+    "aliases": [],
+    "logo": "/logos/pbs-kids.png",
+    "bgColor": "rgb(153, 207, 22)"
   },
   {
     "id": "pc",
