@@ -15,12 +15,6 @@
     "logo": "/logos/abc.png"
   },
   {
-    "id": "abc-news",
-    "name": "ABC News",
-    "aliases": [],
-    "logo": "/logos/abc-news.png"
-  },
-  {
     "id": "abc-news-live",
     "name": "ABC News Live",
     "aliases": [],
