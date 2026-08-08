@@ -5,7 +5,7 @@ actually watch. Tick the channels you care about, and the app shows the
 cheapest plan whose lineup covers your picks — plus other matching plans
 ranked by price.
 
-**Live:** https://youtubeplanpicker.ideaharbor.org
+**Live:** https://youtubetvplanpicker.ideaharbor.org
 
 ## Contributing
 
